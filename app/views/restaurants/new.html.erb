@@ -1,0 +1,19 @@
+
+<div class="container">
+  <h1>Add a new restaurant</h1>
+  <%= simple_form_for @restaurant do |f| %>
+
+    <%= f.input :name, label: "Restaurant name", placeholder: "Crusty Carb" %>
+
+    <%= f.input :address, placeholder: "8901 Sunset Blvd", label: "Restaurant address" %>
+
+    <%= f.input :category, placeholder: "chinese/japanese/french/belgian/italien", label:"Category" %>
+
+    <%= f.input :phone_number, placeholder: "+1 310-642-4202", label: "Phone number" %>
+    <%= f.submit class: 'btn btn-primary' %>
+  <%end%>
+  <%= link_to "Back to restaurants", restaurants_path %>
+</div>
+
+
+

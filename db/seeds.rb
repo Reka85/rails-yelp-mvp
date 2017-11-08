@@ -10,11 +10,11 @@ Restaurant.destroy_all
 cat = %w( chinese italian japanese french belgian)
 
 attributes = [
-  { name: "Pizza Tower", address: Faker::Address.street_address, category: cat.sample },
-  { name: "Propeller", address: Faker::Address.street_address, category: cat.sample },
-  { name: "Dokk", address: Faker::Address.street_address, category: cat.sample },
-  { name: "Troy", address: Faker::Address.street_address, category: cat.sample },
-  { name: "Happy Pizza", address: Faker::Address.street_address, category: cat.sample }
+  { name: "Pizza Tower", address: Faker::Address.street_address, category: cat.sample, phone_number: 123456 },
+  { name: "Propeller", address: Faker::Address.street_address, category: cat.sample, phone_number: 123456 },
+  { name: "Dokk", address: Faker::Address.street_address, category: cat.sample, phone_number: 123456 },
+  { name: "Troy", address: Faker::Address.street_address, category: cat.sample, phone_number: 123456 },
+  { name: "Happy Pizza", address: Faker::Address.street_address, category: cat.sample, phone_number: 123456 }
 ]
 
 attributes.each do |attr|
